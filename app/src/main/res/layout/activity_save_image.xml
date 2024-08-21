@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SaveImageActivity">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="@color/orange"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="PERFIL"
+                android:textColor="@color/white"
+                android:fontFamily="@font/montserrat_extrabold"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleimage_user"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_person"
+        android:layout_marginTop="110dp"
+        app:civ_border_color="@color/gray_light"
+        app:civ_border_width="5dp"
+        app:civ_circle_background_color="@color/white"
+        android:layout_gravity="center|top"
+        />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="bottom"
+    >
+
+    <Button
+        android:id="@+id/btn_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="CONFIRMAR"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/montserrat_extrabold"
+        android:backgroundTint="@color/orange"
+        app:layout_constraintTop_toBottomOf="@id/edittext_confirm_password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="SALTAR ESTE PASO"
+        android:textSize="15sp"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/montserrat_extrabold"
+        app:backgroundTint="@color/gray_light"
+        app:layout_constraintTop_toBottomOf="@id/edittext_confirm_password"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+</LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
